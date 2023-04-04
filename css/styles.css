@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    /* border: 2px solid red; */
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ------- HEADER ------ */
+
+.logo {
+    font-family: 'Flavors', cursive;
+    src: url(../fonts/Flavors-Regular.ttf);
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(02, 30, 47);
+    color: white;
+
+    padding: 15px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    position:fixed;
+    top: 0;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.barra-busqueda {
+    display: flex;
+    border-radius: 50px;
+    gap: 10px;
+    order: 1;
+
+}
+
+body {
+    margin-top: 100px;
+}
+/*  =========INDEX======== */
+
+/* ----- Portada ----- */
+
+.portada {
+    background-color: #ffb703;
+    height: 100vh;
+
+    background-image: url("../img/portada-latas.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 20vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+
+
+    background-color: #ffb803d0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+
+/* ------ Productos ------ */
+
+.productos-titulo {
+    background-color: #fb8500;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta {
+    background-color: #8ecae6;
+    width: 280px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tarjeta-img {
+    width: 100%;
+    height: 60%;
+}
+
+.tarjeta-body {
+    height: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px 10px;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #219ebc;
+}
+
+.contenedor-productos {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======= VARIEDAD ============== */
+.contenedor-variedad {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+.variedad-rubia {
+    background-image: url(../img/cervezas-rubias.png);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+
+}
+
+.variedad-roja {
+    background-image: url(../img/cervezas-rojas.jpg);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+}
+
+.variedad-negra {
+    background-image: url(../img/cervezas-negras.jpg);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+}
+
+.variedad-especiales {
+    background-image: url(../img/cervezas-especiales.jpg);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+}
+/* ================== PAGINA DE CONTACTO ====================== */
+
+.titulo-contacto {
+text-align: center;
+color: white;
+background-color: #fb8500;
+}
+
+/* ================== FOOTER ====================== */
+
+.footer {
+    background-color: #24262b;
+    padding: 60px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-column ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
