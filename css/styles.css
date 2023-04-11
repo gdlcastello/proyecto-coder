@@ -40,7 +40,7 @@ ol {
     justify-content: space-between;
     align-items: baseline;
 
-    position:fixed;
+    position: fixed;
     top: 0;
 }
 
@@ -60,6 +60,7 @@ ol {
 body {
     margin-top: 100px;
 }
+
 /*  =========INDEX======== */
 
 /* ----- Portada ----- */
@@ -151,7 +152,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    
+
 }
 
 .variedad-rubia {
@@ -202,12 +203,13 @@ body {
     width: 200px;
     height: 300px;
 }
+
 /* ================== PAGINA DE CONTACTO ====================== */
 
 .titulo-contacto {
-text-align: center;
-color: white;
-background-color: #fb8500;
+    text-align: center;
+    color: white;
+    background-color: #fb8500;
 }
 
 /* ================== FOOTER ====================== */
@@ -250,3 +252,200 @@ background-color: #fb8500;
     color: #ffffff;
     padding-left: 6px;
 }
+
+/* ============= Pagina de contacto =========== */
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.facebook-contacto {
+    background-image: url(../img/logo-facebook.png);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.instagram-contacto {
+    background-image: url(../img/logo-instagram.png);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.whatsapp-contacto {
+    background-image: url(../img/logo-whatsapp.jpg);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.texto-contacto {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contenedor-mapa {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa {
+    width: 80vw;
+}
+
+
+/* ==================== PAGINA DE ENVIOS================= */
+
+.contenedor-envios {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.titulo-envios {
+    background-color: #fb8500;
+    color: white;
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subtitulo-envios {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.texto-envios {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* =============== PAGINA SOBRE NOSOTROS ====================== */
+
+.contenedor-datos {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .datos-empresa, .datos-personal, .datos-servicios {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .datos-titulos {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .datos-textos {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 768px) {
+    .datos-empresa, .datos-personal, .datos-servicios {
+      width: 30%;
+      margin: 0 20px;
+      padding: 0;
+    }
+}
+
+.datos-personal {
+    order: -1;
+  }
