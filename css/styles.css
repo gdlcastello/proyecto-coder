@@ -61,9 +61,9 @@ body {
     margin-top: 100px;
 }
 
-/*  =========INDEX======== */
+/*  =========================INDEX======================== */
 
-/* ----- Portada ----- */
+/* ----- Portada - Dentro del index ----- */
 
 .portada {
     background-color: #ffb703;
@@ -93,7 +93,7 @@ body {
 
 
 
-/* ------ Productos ------ */
+/* ------==== Productos - Dentro del index ======------ */
 
 .productos-titulo {
     background-color: #fb8500;
@@ -120,8 +120,9 @@ body {
     height: 40%;
     padding: 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -129,8 +130,9 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     padding: 8px 10px;
-    align-self: center;
-    margin-bottom: 30px;
+    align-self:auto;
+
+
 }
 
 .btn:hover {
@@ -146,7 +148,7 @@ body {
     justify-content: center;
 }
 
-/* ======= VARIEDAD ============== */
+/* =======VARIEDAD -  Dentro del index ============== */
 .contenedor-variedad {
     display: flex;
     gap: 15px;
@@ -205,13 +207,27 @@ body {
     height: 300px;
 }
 
-/* ================== PAGINA DE CONTACTO ====================== */
+/* ================= Diseño Responsive ======================= */
 
-.titulo-contacto {
-    text-align: center;
-    color: white;
-    background-color: #fb8500;
+@media(max-width: 862px) {
+    .barra-busqueda {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .menu-desplegable{
+        display: flex;
+        justify-content: center;
+    }
 }
+
+@media(min-width: 862px) {
+    .menu-desplegable {
+        display: none;
+
+}
+
 
 /* ================== FOOTER ====================== */
 
@@ -255,6 +271,16 @@ body {
 }
 
 /* ============= Pagina de contacto =========== */
+
+
+
+.titulo-contacto {
+    text-align: center;
+    color: white;
+    background-color: #fb8500;
+}
+
+
 .redes {
     display: flex;
     align-items: center;
@@ -418,21 +444,21 @@ label {
     margin-bottom: 40px;
     padding: 0 20px;
   }
-  
+
   .datos-titulos {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
   }
-  
+
   .datos-textos {
     font-size: 1.2rem;
     color: #666;
     line-height: 1.5;
     margin-bottom: 30px;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
