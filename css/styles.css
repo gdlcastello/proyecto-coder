@@ -95,6 +95,7 @@ body {
 
 /* ------==== Productos - Dentro del index ======------ */
 
+
 .productos-titulo {
     background-color: #fb8500;
     color: white;
@@ -120,9 +121,13 @@ body {
     height: 40%;
     padding: 15px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 .btn {
@@ -130,7 +135,9 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     padding: 8px 10px;
-    align-self:auto;
+    align-self: auto;
+    color: white;
+    margin-bottom: 10px;
 
 
 }
@@ -147,6 +154,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
 
 /* =======VARIEDAD -  Dentro del index ============== */
 .contenedor-variedad {
@@ -207,27 +216,6 @@ body {
     height: 300px;
 }
 
-/* ================= Diseño Responsive ======================= */
-
-@media(max-width: 862px) {
-    .barra-busqueda {
-        display: none;
-    }
-    nav {
-        display: none;
-    }
-    .menu-desplegable{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media(min-width: 862px) {
-    .menu-desplegable {
-        display: none;
-
-}
-
 
 /* ================== FOOTER ====================== */
 
@@ -237,8 +225,9 @@ body {
 }
 
 .footer-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows:repeat(4, 1fr) ;
 }
 
 .footer-column {
@@ -436,43 +425,100 @@ label {
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .datos-empresa, .datos-personal, .datos-servicios {
+.datos-empresa,
+.datos-personal,
+.datos-servicios {
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
     padding: 0 20px;
-  }
+}
 
-  .datos-titulos {
+.datos-titulos {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
-  }
+}
 
-  .datos-textos {
+.datos-textos {
     font-size: 1.2rem;
     color: #666;
     line-height: 1.5;
     margin-bottom: 30px;
-  }
+}
 
-  img {
+img {
     max-width: 100%;
     height: auto;
     margin-bottom: 30px;
-  }
+}
 
-  @media (min-width: 768px) {
-    .datos-empresa, .datos-personal, .datos-servicios {
-      width: 30%;
-      margin: 0 20px;
-      padding: 0;
+@media (min-width: 768px) {
+
+    .datos-empresa,
+    .datos-personal,
+    .datos-servicios {
+        width: 30%;
+        margin: 0 20px;
+        padding: 0;
     }
 }
 
 .datos-personal {
     order: -1;
-  }
+}
+
+
+/* ================= Diseño Responsive ======================= */
+
+@media(max-width: 862px) {
+    .barra-busqueda {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-desplegable {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .footer-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    /* .footer-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+}
+
+@media(min-width: 862px) {
+    .menu-desplegable {
+        display: none;
+
+    }
+}
+
