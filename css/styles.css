@@ -497,22 +497,12 @@ img {
         align-items: center;
     }
 
-    .contenedor-footer {
-        display: flex;
-        align-items: center;
-    }
-
     .footer {
         display: flex;
         justify-content: center;
         align-items:center;
     }
 
-    /* .footer-column {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
 }
 
 @media(min-width: 862px) {
