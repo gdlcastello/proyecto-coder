@@ -41,7 +41,7 @@ $color-primario: rgb(02, 30, 47);
 $color-secundario: #fb8500;
 
 
-
+//* ================= Diseño Responsive ======================= */
 
 @media (min-width: 768px) {
 
@@ -58,8 +58,6 @@ $color-secundario: #fb8500;
     order: -1;
 }
 
-
-//* ================= Diseño Responsive ======================= */
 
 @media(max-width: 862px) {
     .barra-busqueda {
