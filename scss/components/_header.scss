@@ -1,0 +1,14 @@
+.header {
+    background-color: $color-primario;
+    color: white;
+
+    padding: 15px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    position: fixed;
+    top: 0;
+}
