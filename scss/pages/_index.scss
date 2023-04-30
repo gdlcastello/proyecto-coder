@@ -112,3 +112,37 @@ h3 {
     width: 200px;
     height: 300px;
 }
+
+.contenedor-variedad :hover {
+    transform: translate(10px, 10px);
+}
+
+
+
+
+.logo:hover {
+    animation: shake 0.3s infinite;
+    transition: transform 0.2s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-2px, -2px);
+    }
+
+    50% {
+        transform: translate(2px, -2px);
+    }
+
+    75% {
+        transform: translate(-2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
