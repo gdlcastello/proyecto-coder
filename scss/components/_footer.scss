@@ -1,11 +1,12 @@
 .footer {
     background-color: #24262b;
     padding: 60px 0;
+    
 }
 
 .footer-row {
     display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
+    // grid-template-columns:repeat(4, 1fr) ;
     grid-template-rows:repeat(4, 1fr) ;
 }
 

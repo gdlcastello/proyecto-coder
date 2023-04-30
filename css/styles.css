@@ -37,6 +37,10 @@ body {
     margin: 0 20px;
     padding: 0;
   }
+  .footer-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .datos-personal {
   order: -1;
@@ -44,6 +48,7 @@ body {
 
 @media (max-width: 862px) {
   .barra-busqueda {
+    background-color: red;
     display: none;
   }
   nav {
@@ -66,6 +71,11 @@ body {
     align-items: center;
   }
 }
+@media (min-width: 862px) {
+  .menu-desplegable {
+    display: none;
+  }
+}
 .btn {
   background-color: black;
   border: 2px solid white;
@@ -79,6 +89,20 @@ body {
 .btn:hover {
   background-color: white;
   color: #219ebc;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #3e8e41;
 }
 
 .tarjeta {
@@ -111,7 +135,6 @@ body {
 
 .footer-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
 
@@ -144,6 +167,15 @@ body {
   padding-left: 6px;
 }
 
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .header {
   background-color: rgb(2, 30, 47);
   color: white;
@@ -162,17 +194,11 @@ body {
 }
 
 .barra-busqueda {
-  display: flex;
   border-radius: 50px;
   gap: 10px;
   order: 1;
 }
 
-@media (min-width: 862px) {
-  .menu-desplegable {
-    display: none;
-  }
-}
 .titulo-contacto {
   text-align: center;
   color: white;
@@ -220,20 +246,6 @@ body {
   padding: 15px;
   width: 100px;
   height: 100px;
-}
-
-button[type=submit] {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button[type=submit]:hover {
-  background-color: #3e8e41;
 }
 
 input[type=email],

@@ -14,3 +14,21 @@
     background-color: white;
     color: #219ebc;
 }
+
+// Botones de la pgina de contacto 
+
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}

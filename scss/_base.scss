@@ -4,7 +4,7 @@
     box-sizing: border-box;
     flex-wrap: wrap;
 
-    
+
 }
 
 body {
@@ -52,6 +52,12 @@ $color-secundario: #fb8500;
         margin: 0 20px;
         padding: 0;
     }
+
+
+    .footer-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .datos-personal {
@@ -60,7 +66,9 @@ $color-secundario: #fb8500;
 
 
 @media(max-width: 862px) {
+
     .barra-busqueda {
+        background-color: red;
         display: none;
     }
 
@@ -85,8 +93,14 @@ $color-secundario: #fb8500;
     .footer {
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
 
 }
 
+@media(min-width: 862px) {
+    .menu-desplegable {
+        display: none;
+
+    }
+}
