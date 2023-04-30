@@ -484,4 +484,11 @@ img {
   margin-bottom: 30px;
 }
 
+.titulo-tienda {
+  background-color: #fb8500;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
