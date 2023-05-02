@@ -142,7 +142,6 @@ button[type=submit]:hover {
   width: 25%;
   padding: 0 15px;
 }
-
 .footer-column h4 {
   font-size: 1.2rem;
   color: white;
@@ -152,7 +151,6 @@ button[type=submit]:hover {
   padding-bottom: 10px;
   display: inline-block;
 }
-
 .footer-column ul li a {
   font-size: 1rem;
   text-decoration: none;
@@ -161,7 +159,6 @@ button[type=submit]:hover {
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
-
 .footer-column ul li a:hover {
   color: #ffffff;
   padding-left: 6px;
