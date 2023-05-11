@@ -105,6 +105,22 @@ button[type=submit]:hover {
   background-color: #3e8e41;
 }
 
+.boton-carrito {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.boton-carrito:hover {
+  background-color: #45a049;
+}
+
 .tarjeta {
   background-color: #8ecae6;
   width: 280px;
@@ -191,7 +207,6 @@ form {
 }
 
 .barra-busqueda {
-  border-radius: 50px;
   gap: 10px;
   order: 1;
 }
@@ -486,6 +501,83 @@ img {
   color: white;
   padding: 15px;
   text-align: center;
+}
+
+.carrito-compra {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-carrito {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo-carrito {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.total-carrito {
+  font-weight: bold;
+}
+
+.boton-carrito {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.boton-carrito:hover {
+  background-color: #45a049;
+}
+
+.imagen-producto {
+  max-width: 100px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.nombre-producto {
+  font-weight: bold;
+}
+
+.precio-producto {
+  color: #555;
+}
+
+.titulo-pago {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
 }
 
 /*# sourceMappingURL=styles.css.map */
